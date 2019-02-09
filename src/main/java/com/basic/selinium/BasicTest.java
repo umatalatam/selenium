@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import static java.lang.System.out;
 
 public class BasicTest {
-    String testUrl = "Ravi";
+    String testUrl;
     WebDriver chromeDriver;
 
     @BeforeSuite
