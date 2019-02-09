@@ -1,15 +1,11 @@
 package com.basic.selinium;
 
 
-import jdk.internal.jline.internal.TestAccessible;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
-import java.io.File;
 
 import static java.lang.System.out;
 
@@ -27,6 +23,7 @@ public class BasicTest {
         WebDriver.Window window = options.window();
         window.maximize();
     }
+
     @BeforeClass
     public void setUpClass() {
         out.println("Print Characters");
